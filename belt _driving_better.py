@@ -10,7 +10,10 @@ plt.rcParams["axes.unicode_minus"] = False
 
 fig, ax1 = plt.subplots(figsize=(8, 4))
 
-x = df["T2(N·mm)"]        # 横坐标T2
+# x = df["T2(N·mm)"]        # 横坐标T2
+
+x = df["负载（%）"]        # 横坐标T2
+
 y_eps = df["ε(%)"]        # 左轴ε
 y_eta = df["η(%)"]        # 右轴η
 
@@ -57,5 +60,5 @@ ax1.grid(True, linestyle="--", alpha=0.5)
 
 plt.title("带传动：效率和滑动率曲线 （Drawn by HZQ）", fontsize=16, pad=15, weight="bold", loc="center")
 plt.tight_layout()
-plt.savefig(r"output\\belt_driving_better.png", dpi=300)
+# plt.savefig(r"output\\belt_driving_better.png", dpi=300)
 plt.show()

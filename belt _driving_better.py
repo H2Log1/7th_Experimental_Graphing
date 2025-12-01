@@ -23,7 +23,9 @@ line1 = ax1.plot(
     color="blue", marker="D", linestyle="-", linewidth=2,
     label="T$_2$-ε曲线"
 )
-ax1.set_xlabel("T$_2$(N·mm)")
+# ax1.set_xlabel("T$_2$(N·mm)")
+
+ax1.set_xlabel("负载（%）")
 
 # 隐藏默认左轴标签
 ax1.set_ylabel("")
